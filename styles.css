@@ -168,7 +168,7 @@ footer {
 
 /* Media query */
 
-@media (max-width: 675px) {
+@media (max-width: 500px) {
 
     html {
         font-size: 0.675rem;
