@@ -19,11 +19,6 @@
     src: url(fonts/Inter-V.ttf);
 }
 
-h1 {
-    font-size: 2.6rem;
-    font-family: DalekPinpoint, 'Times New Roman', Times, serif;
-}
-
 h2 {
     font-size: 2rem;
 }
