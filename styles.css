@@ -3,7 +3,7 @@
     margin: 0;
     background: #fff;
     color: #ffa61a;
-    font-family: Inter, sans-serif;
+    font-family: InterBold, sans-serif;
  }
 
 
@@ -17,6 +17,11 @@
 @font-face {
     font-family: Inter;
     src: url(fonts/Inter-V.ttf);
+}
+
+@font-face {
+    font-family: InterBold;
+    src: url(fonts/Inter-Bold.otf);
 }
 
 h2 {
@@ -35,7 +40,7 @@ p {
 
  header {
     background: #343333;
-    padding: 2em 0;
+    padding: 2.5em 0;
     filter: drop-shadow(0px 0px 10px gray);
  }
 
