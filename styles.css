@@ -1,0 +1,199 @@
+ 
+ body {
+    margin: 0;
+    background: #fff;
+    color: #ffa61a;
+    font-family: Inter, sans-serif;
+ }
+
+
+/* Typography */
+
+@font-face {
+    font-family: DalekPinpoint;
+    src: url(fonts/DalekPinpointBold.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(fonts/Inter-V.ttf);
+}
+
+h1 {
+    font-size: 2.6rem;
+    font-family: DalekPinpoint, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.175rem;
+}
+
+/* Layout */
+
+ header {
+    background: #343333;
+    padding: 2em 0;
+    filter: drop-shadow(0px 0px 10px gray);
+ }
+
+ #logo-container {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+ }
+
+img {
+    max-width: 100%;
+}
+
+#logo {
+    height: 15vh;
+    min-height: 10vh;
+    min-width: 10em;
+}
+
+#logo-container,
+#scroll-container,
+.double-page {
+    display: flex;
+}
+
+#scroll-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 8em;
+    color: #343333;  
+}
+
+#scroll-animation {
+    height: 20vh;
+    filter: invert(100%);
+}
+
+.book-item {
+    width: 45%;
+    margin: 3em 0;
+    cursor: pointer;
+    border: 2px transparent solid;
+}
+
+.book-item:hover,
+.book-item:focus {
+    border: 2px solid #ffa61a;
+}
+
+.book-page {
+    height: 100%;
+    object-fit: cover;
+}
+
+.double-page {
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer {
+    background: #ffa61a;
+    padding: 2em;
+    text-align: center;
+    color: #343333;
+}
+
+/* Overlay */
+
+#overlay1,
+#overlay2,
+#overlay3,
+#overlay4,
+#overlay5,
+#overlay6,
+#overlay7,
+#overlay8,
+#overlay9,
+#overlay10,
+#overlay11,
+#overlay12,
+#overlay13,
+#overlay14,
+#overlay15,
+#overlay16,
+#overlay17,
+#overlay18,
+#overlay19,
+#overlay20 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    animation: fade-in 0.5s;
+  }
+
+.overlay-img {
+    width: full-width;
+    height: 95%;
+    object-fit: contain;
+    background-color: rgba(255, 255, 255)
+
+}
+
+/* Animation */
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Media query */
+
+@media (max-width: 800px) {
+
+    html {
+        font-size: 0.675rem;
+    }
+
+    .double-page {
+        flex-direction: column;
+        margin: 4em 0;
+        align-items: center;
+    }
+
+    .book-item {
+        width: 90%;
+        margin: 0;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    #logo {
+        height: 20vh;
+        object-fit: contain;
+    }
+
+    #logo-container {
+        flex-direction: column;
+     }
+}
